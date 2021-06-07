@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		2D0B9C2B266DE42E000600AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C2A266DE42E000600AA /* AppDelegate.swift */; };
 		2D0B9C2D266DE42E000600AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C2C266DE42E000600AA /* SceneDelegate.swift */; };
-		2D0B9C2F266DE42E000600AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C2E266DE42E000600AA /* ViewController.swift */; };
 		2D0B9C32266DE42E000600AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0B9C30266DE42E000600AA /* Main.storyboard */; };
 		2D0B9C35266DE42E000600AA /* DateAndTimePractise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C33266DE42E000600AA /* DateAndTimePractise.xcdatamodeld */; };
 		2D0B9C37266DE430000600AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0B9C36266DE430000600AA /* Assets.xcassets */; };
 		2D0B9C3A266DE430000600AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0B9C38266DE430000600AA /* LaunchScreen.storyboard */; };
 		2D0B9C45266DE430000600AA /* DateAndTimePractiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C44266DE430000600AA /* DateAndTimePractiseTests.swift */; };
 		2D0B9C50266DE430000600AA /* DateAndTimePractiseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C4F266DE430000600AA /* DateAndTimePractiseUITests.swift */; };
+		2D0B9C5E266DE447000600AA /* MainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C5D266DE447000600AA /* MainVc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		2D0B9C27266DE42E000600AA /* DateAndTimePractise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateAndTimePractise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0B9C2A266DE42E000600AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D0B9C2C266DE42E000600AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D0B9C2E266DE42E000600AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D0B9C31266DE42E000600AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D0B9C34266DE42E000600AA /* DateAndTimePractise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DateAndTimePractise.xcdatamodel; sourceTree = "<group>"; };
 		2D0B9C36266DE430000600AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		2D0B9C4B266DE430000600AA /* DateAndTimePractiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateAndTimePractiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0B9C4F266DE430000600AA /* DateAndTimePractiseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimePractiseUITests.swift; sourceTree = "<group>"; };
 		2D0B9C51266DE430000600AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D0B9C5D266DE447000600AA /* MainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +103,12 @@
 			children = (
 				2D0B9C2A266DE42E000600AA /* AppDelegate.swift */,
 				2D0B9C2C266DE42E000600AA /* SceneDelegate.swift */,
-				2D0B9C2E266DE42E000600AA /* ViewController.swift */,
 				2D0B9C30266DE42E000600AA /* Main.storyboard */,
 				2D0B9C36266DE430000600AA /* Assets.xcassets */,
 				2D0B9C38266DE430000600AA /* LaunchScreen.storyboard */,
 				2D0B9C3B266DE430000600AA /* Info.plist */,
 				2D0B9C33266DE42E000600AA /* DateAndTimePractise.xcdatamodeld */,
+				2D0B9C5D266DE447000600AA /* MainVc.swift */,
 			);
 			path = DateAndTimePractise;
 			sourceTree = "<group>";
@@ -261,8 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D0B9C2F266DE42E000600AA /* ViewController.swift in Sources */,
 				2D0B9C2B266DE42E000600AA /* AppDelegate.swift in Sources */,
+				2D0B9C5E266DE447000600AA /* MainVc.swift in Sources */,
 				2D0B9C35266DE42E000600AA /* DateAndTimePractise.xcdatamodeld in Sources */,
 				2D0B9C2D266DE42E000600AA /* SceneDelegate.swift in Sources */,
 			);

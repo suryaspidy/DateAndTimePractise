@@ -1,24 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Vc-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVc" customModule="DateAndTimePractise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="QuE-JJ-dZZ">
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                                <connections>
+                                    <action selector="DatePickerValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="66e-Yo-2Jf"/>
+                                </connections>
+                            </datePicker>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFG-F6-wiH">
+                                <rect key="frame" x="100" y="94" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yne-qq-TWs">
+                                <rect key="frame" x="100" y="178" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvN-KC-rlM">
+                                <rect key="frame" x="183" y="788" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="lyW-Oe-yFn">
+                                <rect key="frame" x="0.0" y="222" width="414" height="108"/>
+                            </pickerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yne-qq-TWs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Ah9-mZ-WbI"/>
+                            <constraint firstItem="Yne-qq-TWs" firstAttribute="top" secondItem="hFG-F6-wiH" secondAttribute="bottom" constant="50" id="Fnl-bn-uxk"/>
+                            <constraint firstItem="hFG-F6-wiH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="JWV-1q-PgA"/>
+                            <constraint firstItem="lyW-Oe-yFn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LPC-Cn-D39"/>
+                            <constraint firstItem="QuE-JJ-dZZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LZK-4r-YiN"/>
+                            <constraint firstItem="EvN-KC-rlM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LnF-DL-dip"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EvN-KC-rlM" secondAttribute="bottom" constant="50" id="USW-JA-flq"/>
+                            <constraint firstItem="lyW-Oe-yFn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aEH-md-lq7"/>
+                            <constraint firstItem="QuE-JJ-dZZ" firstAttribute="top" secondItem="lyW-Oe-yFn" secondAttribute="bottom" constant="10" id="bdh-Tz-S4V"/>
+                            <constraint firstItem="lyW-Oe-yFn" firstAttribute="top" secondItem="Yne-qq-TWs" secondAttribute="bottom" constant="10" id="gxx-mY-w0y"/>
+                            <constraint firstItem="lyW-Oe-yFn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iyd-2e-dZf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hFG-F6-wiH" secondAttribute="trailing" constant="100" id="mvt-bh-A53"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yne-qq-TWs" secondAttribute="trailing" constant="100" id="nBt-o5-h7T"/>
+                            <constraint firstItem="QuE-JJ-dZZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rV5-iJ-q5V"/>
+                            <constraint firstItem="hFG-F6-wiH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="sSF-1p-kMD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentDateTextField" destination="Yne-qq-TWs" id="V6s-WS-1he"/>
+                        <outlet property="datePickerArea" destination="QuE-JJ-dZZ" id="NZz-Lf-Ofk"/>
+                        <outlet property="differenceTextArea" destination="EvN-KC-rlM" id="7uz-L4-mET"/>
+                        <outlet property="textFieldArea" destination="hFG-F6-wiH" id="9zI-4z-x1A"/>
+                        <outlet property="typePickerArea" destination="lyW-Oe-yFn" id="MA4-C0-3LR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
